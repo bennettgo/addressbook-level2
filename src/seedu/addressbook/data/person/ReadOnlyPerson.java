@@ -11,7 +11,7 @@ public interface ReadOnlyPerson {
 
     Name getName();
     Phone getPhone();
-    Contact getEmail();
+    Email getEmail();
     Address getAddress();
 
     /**
@@ -34,7 +34,7 @@ public interface ReadOnlyPerson {
     }
 
     /**
-     * Formats the person as text, showing all contact details.
+     * Formats the person as text, showing all email details.
      */
     default String getAsTextShowAll() {
         final StringBuilder builder = new StringBuilder();
