@@ -83,4 +83,15 @@ public interface ReadOnlyPerson {
         }
         return builder.toString();
     }
+    /*
+     * Returns a string that contains all the information of a person except tags
+     * 
+    */
+    public default String getPrintableString(Printable... printables){
+    	final StringBuilder builder= new StringBuilder();
+    	for(Printable info:printables){
+    		builder.append(info.getPrintableString());
+    	}
+    	return builder.toString();
+    }
 }
