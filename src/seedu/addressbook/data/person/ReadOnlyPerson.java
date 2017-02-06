@@ -11,7 +11,7 @@ public interface ReadOnlyPerson {
 
     Name getName();
     Phone getPhone();
-    Email getEmail();
+    Contact getEmail();
     Address getAddress();
 
     /**
